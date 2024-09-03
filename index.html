@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fotogram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body onload="render()">
+    <header id="navigationBar">
+        <div>
+            <img class="logo" src="./assets/logo/logo_fotogram.svg" alt="fotogram logo">
+        </div>
+    </header>
+
+    <section>
+        <h2>Willkommen bei Fotogram</h2>
+        
+        <div class="myContent" id="myContent">
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>   <!-- &times gefunden bei https://www.toptal.com/designers/htmlarrows/math/multiplication-sign/-->  
+                <div class="modal-content">
+                    <img id="overlay" class="d_None" src="" >
+                </div>
+                <a class="prev" onclick="changeImage(-1)">&#8656;</a>
+                <a class="next" onclick="changeImage(+1)">&#8658;</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <img class="logo" src="assets/logo/logo_fotogram.svg" alt="Fotogram logo">
+    </footer>
+</body>
+
+</html>
